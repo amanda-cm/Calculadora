@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title> Calculadora </title>
+</head>
+
+<body>
+    <div class="main">
+        <form action="" name="Calculadora">
+
+            <header>
+                <select class="op">
+                    <optgroup label="Operação:"></optgroup>
+                        <option value="basico.html" selected> Básico </option>
+                        <option value="juroscompostos.html"> Juros compostos </option>
+                </select>
+                <button id="clearH" onclick="clearhistory()"> Limpar histórico </button> 
+            </header>
+
+            <div id="historico"></div>
+
+            <input type="text" class="display maincolor" name="text" id="display" disabled>
+            <input type="button" class="clear" value="C" onclick="clearDisplay()"> <br>
+
+            <input type="button" class="button maincolor" name="btn9" value="9" onclick="displaynum(value)">
+            <input type="button" class="button maincolor" name="btn8" value="8" onclick="displaynum(value)">
+            <input type="button" class="button maincolor" name="btn7" value="7" onclick="displaynum(value)">
+            <input type="button" class="button add" name="btnadd" value="+" onclick="displaynum(value)"> <br>
+
+            <input type="button" class="button maincolor" name="btn6" value="6" onclick="displaynum(value)">
+            <input type="button" class="button maincolor" name="btn5" value="5" onclick="displaynum(value)">
+            <input type="button" class="button maincolor" name="btn4" value="4" onclick="displaynum(value)">
+            <input type="button" class="button sub" name="btnsub" value="-" onclick="displaynum(value)"> <br>
+
+            <input type="button" class="button maincolor" name="btn3" value="3" onclick="displaynum(value)">
+            <input type="button" class="button maincolor" name="btn2" value="2" onclick="displaynum(value)">
+            <input type="button" class="button maincolor" name="btn1" value="1" onclick="displaynum(value)">
+            <input type="button" class="button mult" name="btnmult" value="*" onclick="displaynum(value)"> <br>
+
+            <input type="button" class="button maincolor" name="btnponto" value="." onclick="displaynum(value)">
+            <input type="button" class="button maincolor" name="btn0" value="0" onclick="displaynum(value)">
+            <input type="button" class="button equal" name="btnequal" value="=" id="equal" onclick="calculateResult()">
+            <input type="button" class="button div" name="btndiv" value="/" onclick="displaynum(value)"> <br>
+            
+        </form>
+    </div>
+</body>
+    <script src="script.js"></script>
+    <script src="basico.js"></script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Juros compostos</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <header>
+           <select class="op">
+                <optgroup label="Operação:"></optgroup><b>
+                    <option value="basico.html"> Básico </option>
+                    <option value="juroscompostos.html" selected> Juros compostos </option>
+            </select> <br><br>
+        </header>
+            <!-- O atributo FOR faz um tipo de link entre a label e o input . Logo o FOR tem que apontar para o ID do input -->
+        <div id="input-box">
+            <div class="input-field">
+                <label for="valor"> Valor inícial (capital): </label>
+                <input type="number" id="valor">
+            </div>
+
+             <div class="input-field">
+                <label for="juros"> Taxa de juros a.m: </label>
+                <input type="number" id="juros">
+            </div>
+
+            <div class="input-field">
+                <label for="tempo"> Tempo de rendimento (meses): </label>
+                <input type="number" id="tempo">
+            </div>
+        </div>
+
+        <div id="resultado">
+            <h4>Resultado:</h4>
+            <span id="total"> R$ 0,00 </span>
+        </div>
+
+        <button id="calculo"> Calcular </button>
+        <button id="limpar" onclick="location.reload()"> Limpar </button>
+        
+    </div>
+</body>
+    <script src="script.js"></script>
+    <script src="juros-compostos.js"></script>
+</html>
